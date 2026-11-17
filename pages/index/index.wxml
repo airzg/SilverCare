@@ -1,0 +1,37 @@
+<view class="page home">
+  <view class="hero">
+    <view class="hero-top">
+      <view class="avatar">LX</view>
+      <view class="hero-greet">
+        <view class="hello">Hello, Mrs Wang ✨</view>
+        <view class="hello-sub">Care with you, every visit</view>
+      </view>
+      <van-icon name="setting-o" size="44rpx" color="#4a5169" bindtap="onSetting" />
+    </view>
+  </view>
+
+  <view class="hero-photo">
+    <image src="/assets/hero-home.jpg" mode="aspectFill" />
+  </view>
+
+  <view class="actions">
+    <button class="brand-btn blue action" bindtap="goBook">
+      <van-icon name="calendar-o" size="40rpx" /> <text class="action-label">Book a visit</text> <van-icon name="arrow" />
+    </button>
+    <button class="brand-btn green action" bindtap="goOrders">
+      <van-icon name="orders-o" size="40rpx" /> <text class="action-label">My orders</text> <van-icon name="arrow" />
+    </button>
+    <button class="brand-btn orange action" bindtap="onThirdTap">
+      <van-icon name="phone-o" size="40rpx" /> <text class="action-label">{{thirdLabel}}</text> <van-icon name="arrow" />
+    </button>
+    <button class="brand-btn red action" bindtap="goUrgent">
+      <van-icon name="warning-o" size="40rpx" /> <text class="action-label">Urgent help</text> <van-icon name="arrow" />
+    </button>
+  </view>
+
+  <view class="tabbar">
+    <view class="tab active"><van-icon name="home-o" size="40rpx" /><text>Home</text></view>
+    <view class="tab" bindtap="goOrders"><van-icon name="orders-o" size="40rpx" /><text>Orders</text></view>
+    <view class="tab" bindtap="goProfile"><van-icon name="friend-o" size="40rpx" /><text>Profile</text></view>
+  </view>
+</view>

@@ -1,0 +1,24 @@
+{
+  "name": "silvercare",
+  "version": "1.0.0",
+  "description": "Silver Care Mini Program",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/airzg/SilverCare.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/airzg/SilverCare/issues"
+  },
+  "homepage": "https://github.com/airzg/SilverCare#readme",
+  "dependencies": {
+    "@vant/weapp": "^1.10.24"
+  }
+}

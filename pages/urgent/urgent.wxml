@@ -1,0 +1,23 @@
+<view class="page urgent">
+  <view class="top-title">Urgent help</view>
+  <view class="top-sub muted">24/7 support online, please describe your emergency</view>
+
+  <view class="chat">
+    <view class="msg service">
+      <view class="avatar cs">CS</view>
+      <view class="bubble">Hello, this is SilverCare support. How can we help you?</view>
+    </view>
+    <view class="msg service" wx:for="{{replies}}" wx:key="id">
+      <view class="avatar cs">CS</view>
+      <view class="bubble">{{item.text}}</view>
+    </view>
+    <view class="msg me" wx:for="{{mines}}" wx:key="id">
+      <view class="bubble">{{item.text}}</view>
+    </view>
+  </view>
+
+  <view class="composer">
+    <input class="composer-input" value="{{input}}" placeholder="Type a message…" bindinput="onInput" confirm-type="send" bindconfirm="onSend" />
+    <button class="send-btn" bindtap="onSend">Send</button>
+  </view>
+</view>

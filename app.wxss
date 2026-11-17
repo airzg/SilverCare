@@ -1,0 +1,55 @@
+/* ============ SilverCare global theme ============ */
+page {
+  --brand-blue: #4f7cff;
+  --brand-green: #1cb894;
+  --brand-orange: #f59a3f;
+  --brand-red: #ef5b5b;
+  --ink: #1a2240;
+  --muted: #8b93a7;
+  --line: #edf0f6;
+  --bg: #f6f8fc;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", sans-serif;
+  font-size: 28rpx;
+}
+
+.page { min-height: 100vh; padding-bottom: 60rpx; box-sizing: border-box; }
+
+.card {
+  background: #fff;
+  border-radius: 24rpx;
+  box-shadow: 0 6rpx 24rpx rgba(26,34,64,.06);
+  padding: 28rpx;
+  box-sizing: border-box;
+}
+
+.row { display: flex; align-items: center; }
+.between { display: flex; align-items: center; justify-content: space-between; }
+.muted { color: var(--muted); }
+.strong { font-weight: 600; }
+
+.brand-btn {
+  height: 96rpx;
+  border-radius: 20rpx;
+  font-size: 30rpx;
+  font-weight: 600;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 100%;
+  line-height: 96rpx;
+  padding: 0;
+}
+.brand-btn::after { border: none; }
+.brand-btn.blue { background: var(--brand-blue); }
+.brand-btn.green { background: var(--brand-green); }
+.brand-btn.orange { background: var(--brand-orange); }
+.brand-btn.red { background: var(--brand-red); }
+.brand-btn.ghost { background: #fff; color: var(--brand-blue); border: 2rpx solid var(--brand-blue); line-height: 92rpx; }
+
+.section-title { font-size: 30rpx; font-weight: 600; margin: 32rpx 0 18rpx; }
+
+.hairline { height: 1rpx; background: var(--line); margin: 20rpx 0; }
