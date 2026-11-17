@@ -1,0 +1,12 @@
+.orders { padding: 32rpx; }
+.head { font-size: 36rpx; font-weight: 700; margin-bottom: 28rpx; }
+.count { font-size: 24rpx; color: #fff; background: #4f7cff; padding: 4rpx 16rpx; border-radius: 20rpx; margin-left: 12rpx; vertical-align: middle; }
+.order { margin-bottom: 20rpx; }
+.order-id { font-size: 24rpx; color: #8b93a7; }
+.status { font-size: 22rpx; padding: 6rpx 18rpx; border-radius: 20rpx; }
+.status.scheduled { background: #eef3ff; color: #4f7cff; }
+.status.done { background: #e6f8f2; color: #1cb894; }
+.order-service { font-size: 30rpx; font-weight: 600; }
+.order-meta { font-size: 24rpx; margin-top: 12rpx; }
+.empty { text-align: center; padding: 120rpx 0; color: #c2c8d6; }
+.empty view { margin-top: 20rpx; }

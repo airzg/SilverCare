@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/customer/customer",
+    "pages/book/book",
+    "pages/orders/orders",
+    "pages/report/report",
+    "pages/urgent/urgent"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "SilverCare",
+    "backgroundColor": "#f5f7fa",
+    "enablePullDownRefresh": false
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
