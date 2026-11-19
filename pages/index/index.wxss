@@ -1,5 +1,13 @@
 .home { background: #fff; }
 
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8rpx 0 24rpx;
+}
+.brand image { width: 240rpx; height: auto; }
+
 .hero {
   background: #fff;
   padding: 28rpx 36rpx 24rpx;
@@ -16,8 +24,8 @@
 .hello { font-size: 38rpx; font-weight: 700; color: var(--ink); }
 .hello-sub { font-size: 24rpx; color: var(--muted); margin-top: 6rpx; }
 
-.hero-photo { width: 100%; height: 340rpx; overflow: hidden; }
-.hero-photo image { width: 100%; height: 100%; display: block; }
+.hero-photo { position: relative; width: 100%; height: 340rpx; overflow: hidden; }
+.hero-bg { position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: block; }
 
 .actions { padding: 40rpx 36rpx; }
 .action { justify-content: flex-start; margin-bottom: 24rpx; padding: 0 32rpx; width: 100% !important; }

@@ -23,15 +23,21 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "Home"
+        "text": "Home",
+        "iconPath": "assets/tab/home.png",
+        "selectedIconPath": "assets/tab/home-active.png"
       },
       {
         "pagePath": "pages/orders/orders",
-        "text": "Orders"
+        "text": "Orders",
+        "iconPath": "assets/tab/orders.png",
+        "selectedIconPath": "assets/tab/orders-active.png"
       },
       {
         "pagePath": "pages/customer/customer",
-        "text": "Profile"
+        "text": "Profile",
+        "iconPath": "assets/tab/profile.png",
+        "selectedIconPath": "assets/tab/profile-active.png"
       }
     ]
   },
