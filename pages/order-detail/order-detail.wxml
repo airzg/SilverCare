@@ -1,0 +1,51 @@
+<view class="page detail">
+  <view class="page-title">{{headerTitle}}</view>
+
+  <view class="companion card">
+    <view class="avatar">LX</view>
+    <view class="companion-info">
+      <view class="name-row">
+        <view class="name">Li Xin</view>
+        <view class="badge">Companion</view>
+      </view>
+      <view class="rating">4.9 rating 500 visits</view>
+      <view class="traits">Professional attentive careful</view>
+    </view>
+  </view>
+
+  <view class="timeline card">
+    <view class="step" wx:for="{{steps}}" wx:key="key">
+      <view class="rail">
+        <view class="dot {{item.state}}">
+          <van-icon wx:if="{{item.state === 'done'}}" name="checked" size="22rpx" color="#fff" />
+          <view wx:if="{{item.state === 'active'}}" class="active-core"></view>
+        </view>
+        <view class="line" wx:if="{{index < steps.length - 1}}"></view>
+      </view>
+      <view class="step-body">
+        <view class="step-title {{item.state}}">{{item.title}}</view>
+        <view class="step-desc">{{item.desc}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="info-card card" wx:if="{{showFinish}}">
+    <view class="row between">
+      <view class="muted">Expected finish</view>
+      <view class="strong">{{finishTime}}</view>
+    </view>
+  </view>
+
+  <view class="call-card card" bindtap="onCall">
+    <van-icon name="phone-o" size="36rpx" color="#4f7cff" />
+    <view class="call-text">Any problem Call 4001234567</view>
+    <van-icon name="arrow" color="#c2c8d6" />
+  </view>
+
+  <view class="next card" wx:if="{{showNext}}">
+    <view class="section-label">What happens next</view>
+    <view class="next-item" wx:for="{{nextLines}}" wx:key="*this">{{item}}</view>
+  </view>
+
+  <button class="brand-btn ghost notify" bindtap="onNotify">Notify family</button>
+</view>

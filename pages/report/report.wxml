@@ -5,25 +5,25 @@
   </view>
 
   <view class="report-body">
-    <view class="keypoints"><van-icon name="info-o" size="32rpx" /> 3 key points · sheet photographed</view>
+    <view class="keypoints"><van-icon name="info-o" size="32rpx" /> 3 key points and sheet photographed</view>
 
     <view class="sheet">
       <van-icon name="photo-o" size="64rpx" color="#c2c8d6" />
-      <view class="muted">Large-print sheet · image</view>
+      <view class="muted">Large print sheet image</view>
     </view>
 
     <view class="summary">
       <view class="sum-item"><van-icon name="checked" size="30rpx" color="#1cb894" /> Registration and consultation recorded</view>
-      <view class="sum-item"><van-icon name="checked" size="30rpx" color="#1cb894" /> Pharmacy collected, with photo of original sheet</view>
+      <view class="sum-item"><van-icon name="checked" size="30rpx" color="#1cb894" /> Pharmacy collected with photo of original sheet</view>
       <view class="sum-item"><van-icon name="checked" size="30rpx" color="#1cb894" /> Advice sheet handed over and explained</view>
     </view>
 
-    <view class="next-visit">Next visit · 2 June</view>
+    <view class="next-visit">Next visit 2 June</view>
 
     <view class="sign-row">
       <view class="sign-box">
         <view class="muted small">Consent</view>
-        <view class="signed">Signed ✓</view>
+        <view class="signed">Signed</view>
       </view>
       <view class="sign-box">
         <view class="muted small">Records bond</view>
@@ -37,8 +37,8 @@
     </view>
 
     <view class="report-foot row between">
-      <text class="muted">Order CN-2026-0418</text>
-      <text class="filed">Filed ✓</text>
+      <text class="muted">Service report</text>
+      <text class="filed">Filed</text>
     </view>
   </view>
 </view>

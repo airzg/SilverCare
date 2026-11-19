@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Order details",
+  "usingComponents": {
+    "van-icon": "/miniprogram_npm/@vant/weapp/icon/index"
+  }
+}

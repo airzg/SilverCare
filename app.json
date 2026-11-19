@@ -4,6 +4,7 @@
     "pages/customer/customer",
     "pages/book/book",
     "pages/orders/orders",
+    "pages/order-detail/order-detail",
     "pages/report/report",
     "pages/urgent/urgent"
   ],

@@ -1,6 +1,9 @@
 .orders { padding: 32rpx; }
 .head { font-size: 36rpx; font-weight: 700; margin-bottom: 28rpx; }
 .count { font-size: 24rpx; color: #fff; background: #4f7cff; padding: 4rpx 16rpx; border-radius: 20rpx; margin-left: 12rpx; vertical-align: middle; }
+.filters { display: flex; gap: 16rpx; margin-bottom: 24rpx; }
+.filter-chip { padding: 12rpx 28rpx; background: #fff; border: 2rpx solid #edf0f6; border-radius: 24rpx; font-size: 24rpx; color: #8b93a7; }
+.filter-chip.selected { background: #eef3ff; border-color: #4f7cff; color: #4f7cff; font-weight: 600; }
 .order { margin-bottom: 20rpx; }
 .order-id { font-size: 24rpx; color: #8b93a7; }
 .status { font-size: 22rpx; padding: 6rpx 18rpx; border-radius: 20rpx; }

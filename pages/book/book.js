@@ -1,5 +1,10 @@
 const WEEK = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 const MONTH = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+const HOSPITALS = [
+  { name: 'PUCH', address: 'Shoutaihuan Rd Dongcheng', detail: 'Wingtuan block 3F' },
+  { name: 'Union Hospital', address: 'Dongdan North St Dongcheng', detail: 'Outpatient building 2F' },
+  { name: 'Central Hospital', address: 'Chang An Ave Dongcheng', detail: 'Main building 1F' }
+]
 
 function pad(n) {
   return n < 10 ? '0' + n : '' + n
@@ -32,6 +37,9 @@ function currentSlot() {
 
 Page({
   data: {
+    hospitals: HOSPITALS,
+    hospitalIndex: 0,
+    hospital: HOSPITALS[0],
     dates: [],
     date: '',
     minDate: '',
@@ -63,6 +71,10 @@ Page({
       maxDate: formatDate(lastDay)
     })
   },
+  onHospital(e) {
+    const index = Number(e.detail.value)
+    this.setData({ hospitalIndex: index, hospital: this.data.hospitals[index] })
+  },
   onDate(e) { this.setData({ date: e.currentTarget.dataset.key }) },
   onTime(e) { this.setData({ time: e.currentTarget.dataset.key }) },
   onCalendar(e) {
@@ -93,13 +105,13 @@ Page({
     getApp().globalData.orders.unshift({
       id: 'CN-' + new Date().getFullYear() + '-' + Math.floor(1000 + Math.random() * 8999),
       date: dateLabel,
-      hospital: 'PUCH',
+      hospital: this.data.hospital.name,
       service: this.data.service.name,
       status: 'Scheduled'
     })
     wx.showModal({
       title: 'Booking confirmed',
-      content: dateLabel + ' · ' + timeLabel + '\n' + this.data.service.name + ' · RMB ' + this.data.service.price,
+      content: dateLabel + ' ' + timeLabel + '\n' + this.data.service.name + ' RMB ' + this.data.service.price,
       showCancel: false,
       confirmText: 'OK',
       success: () => wx.navigateBack()

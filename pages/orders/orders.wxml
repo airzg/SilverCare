@@ -1,5 +1,8 @@
 <view class="page orders">
   <view class="head">My orders <text class="count">{{orders.length}}</text></view>
+  <view class="filters">
+    <view wx:for="{{filters}}" wx:key="*this" class="filter-chip {{filter === item ? 'selected' : ''}}" data-filter="{{item}}" bindtap="onFilter">{{item}}</view>
+  </view>
   <view class="order card" wx:for="{{orders}}" wx:key="id" bindtap="onOrder" data-id="{{item.id}}">
     <view class="row between">
       <view class="order-id">{{item.id}}</view>
@@ -10,7 +13,7 @@
       <view class="order-service">{{item.service}}</view>
       <van-icon name="arrow" color="#c2c8d6" />
     </view>
-    <view class="order-meta muted">{{item.date}} · {{item.hospital}}</view>
+    <view class="order-meta muted">{{item.date}} {{item.hospital}}</view>
   </view>
   <view class="empty" wx:if="{{orders.length === 0}}">
     <van-icon name="orders-o" size="80rpx" color="#c2c8d6" />

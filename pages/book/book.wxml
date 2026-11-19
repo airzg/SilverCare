@@ -1,13 +1,15 @@
 <view class="page book">
-  <view class="hospital card">
-    <view class="hospital-icon"><van-icon name="location-o" size="44rpx" color="#4f7cff" /></view>
-    <view class="hospital-info">
-      <view class="strong">PUCH</view>
-      <view class="muted small">Shoutaihuan Rd, Dongcheng</view>
-      <view class="muted small">Wingtuan block, 3F</view>
+  <picker mode="selector" range="{{hospitals}}" range-key="name" value="{{hospitalIndex}}" bindchange="onHospital">
+    <view class="hospital card">
+      <view class="hospital-icon"><van-icon name="location-o" size="44rpx" color="#4f7cff" /></view>
+      <view class="hospital-info">
+        <view class="strong">{{hospital.name}}</view>
+        <view class="muted small">{{hospital.address}}</view>
+        <view class="muted small">{{hospital.detail}}</view>
+      </view>
+      <van-icon name="arrow" color="#c2c8d6" />
     </view>
-    <van-icon name="arrow" color="#c2c8d6" />
-  </view>
+  </picker>
 
   <view class="section-title">Select a date</view>
   <view class="date-row">

@@ -3,31 +3,44 @@
     <view class="hero-top">
       <view class="avatar">LX</view>
       <view class="hero-greet">
-        <view class="hello">Hello, Mrs. Wang</view>
+        <view class="hello">Hello Mrs Wang</view>
         <view class="hello-sub">Care with past 3 visits</view>
       </view>
       <van-icon name="setting-o" size="44rpx" color="#fff" bindtap="onSetting" />
     </view>
-    <view class="hero-illustration">
-      <view class="illus-circle c1"></view>
-      <view class="illus-circle c2"></view>
-      <view class="illus-heart">♥</view>
-      <view class="illus-caption">A hospital companion service for older adults</view>
+    <view class="hero-stats">
+      <view class="stat" data-filter="Completed" bindtap="goOrdersWithFilter" hover-class="stat-hover">
+        <view class="stat-value">{{completedCount}}</view>
+        <view class="stat-label">Completed</view>
+      </view>
+      <view class="stat" data-filter="Upcoming" bindtap="goOrdersWithFilter" hover-class="stat-hover">
+        <view class="stat-value">{{upcomingCount}}</view>
+        <view class="stat-label">Upcoming</view>
+      </view>
+      <view class="stat">
+        <view class="stat-value">92</view>
+        <view class="stat-label">Satisfaction score</view>
+      </view>
     </view>
   </view>
 
-  <view class="actions">
-    <button class="brand-btn blue action" bindtap="goBook">
-      <van-icon name="calendar-o" size="40rpx" /> <text class="action-label">Book a visit</text> <van-icon name="arrow" />
-    </button>
-    <button class="brand-btn green action" bindtap="goOrders">
-      <van-icon name="orders-o" size="40rpx" /> <text class="action-label">My orders</text> <van-icon name="arrow" />
-    </button>
-    <button class="brand-btn orange action" bindtap="goReport">
-      <van-icon name="description-o" size="40rpx" /> <text class="action-label">Service report</text> <van-icon name="arrow" />
-    </button>
-    <button class="brand-btn red action" bindtap="goUrgent">
-      <van-icon name="warning-o" size="40rpx" /> <text class="action-label">Urgent help</text> <van-icon name="arrow" />
-    </button>
-  </view>
+  <view class="section-title">Account</view>
+  <van-cell-group custom-class="profile-group">
+    <van-cell title="Personal information" label="Name phone and address" icon="contact" is-link data-title="Personal information" bind:click="onAccountTap" />
+    <van-cell title="Emergency contact" label="Who to call in an emergency" icon="phone-o" is-link data-title="Emergency contact" bind:click="onAccountTap" />
+    <van-cell title="Care preferences" label="Language mobility and notes" icon="like-o" is-link data-title="Care preferences" bind:click="onAccountTap" />
+  </van-cell-group>
+
+  <view class="section-title">Records</view>
+  <van-cell-group custom-class="profile-group">
+    <van-cell title="Visit history" label="Past and upcoming bookings" icon="orders-o" is-link data-title="Visit history" bind:click="onAccountTap" />
+    <van-cell title="Service reports" label="Reports from completed visits" icon="description" is-link bind:click="goReport" />
+  </van-cell-group>
+
+  <view class="section-title">Support</view>
+  <van-cell-group custom-class="profile-group">
+    <van-cell title="Notifications" icon="bell" is-link data-title="Notifications" bind:click="onAccountTap" />
+    <van-cell title="Help and support" icon="question-o" is-link data-title="Help and support" bind:click="onAccountTap" />
+    <van-cell title="About SilverCare" icon="info-o" is-link data-title="About SilverCare" bind:click="onAccountTap" />
+  </van-cell-group>
 </view>
