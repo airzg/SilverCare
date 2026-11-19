@@ -28,10 +28,4 @@
       <van-icon name="warning-o" size="40rpx" /> <text class="action-label">Urgent help</text> <van-icon name="arrow" />
     </button>
   </view>
-
-  <view class="tabbar">
-    <view class="tab active"><van-icon name="home-o" size="40rpx" /><text>Home</text></view>
-    <view class="tab" bindtap="goOrders"><van-icon name="orders-o" size="40rpx" /><text>Orders</text></view>
-    <view class="tab" bindtap="goProfile"><van-icon name="friend-o" size="40rpx" /><text>Profile</text></view>
-  </view>
 </view>

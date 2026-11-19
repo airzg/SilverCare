@@ -14,6 +14,26 @@
     "backgroundColor": "#f5f7fa",
     "enablePullDownRefresh": false
   },
+  "tabBar": {
+    "color": "#8b93a7",
+    "selectedColor": "#4f7cff",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Home"
+      },
+      {
+        "pagePath": "pages/orders/orders",
+        "text": "Orders"
+      },
+      {
+        "pagePath": "pages/customer/customer",
+        "text": "Profile"
+      }
+    ]
+  },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

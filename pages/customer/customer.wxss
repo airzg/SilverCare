@@ -1,5 +1,3 @@
-.home { padding-bottom: 160rpx; }
-
 .hero {
   background: linear-gradient(135deg, #6a93ff 0%, #9db8ff 55%, #bcd0ff 100%);
   padding: 40rpx 36rpx 30rpx;
@@ -35,12 +33,3 @@
 .actions { padding: 40rpx 0 0; }
 .action { justify-content: flex-start; margin-bottom: 24rpx; padding: 0 32rpx; width: 100%; }
 .action-label { flex: 1; text-align: left; margin-left: 20rpx; }
-
-.tabbar {
-  position: fixed; left: 0; right: 0; bottom: 0; height: 110rpx;
-  background: #fff; display: flex; border-top: 1rpx solid #edf0f6;
-  padding-bottom: env(safe-area-inset-bottom);
-}
-.tab { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #9aa3b5; font-size: 22rpx; }
-.tab text { margin-top: 6rpx; }
-.tab.active { color: #4f7cff; }
